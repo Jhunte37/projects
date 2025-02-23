@@ -20,21 +20,15 @@
 
 <h1>My 2nd Web Page</h1>
 
-<img src="Chania.png" alt="Flowers in Chania"
+<img src="Chania/Chania.png">
 
-width="460" height="345">
+<p>Hi guys welcome to my webpage youll see this beautiful place at Chania</p>
 
-<p> Hi guys welcome to my webpage youll see this
-
-beautiful place at Chania</p>
-
-<a href="https://en.wikipedia.org/wiki/Chania">Chania 1
+<a href="https://en.wikipedia.org/wiki/Chania">Chania 1</a>
 
 <a href="https: //www.chaniatourism.gr/">Chania2</a>
 
-<a href="https://www.tripadvisor.com/Tourism-g189415-
-
-Chania_Town_Chania_Prefecture_Crete-Vacations.html">Chania 3</a>
+<a href="https://www.tripadvisor.com/Tourism-g189415-Chania_Town_Chania_Prefecture_Crete-Vacations.html">Chania 3</a>
 
 
 <footer>
