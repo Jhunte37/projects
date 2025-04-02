@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Nutrition</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background: #2c3e50;
+            color: #fff;
+            text-align: center;
+            padding: 2rem;
+        }
+        h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+        nav {
+            text-align: center;
+            background: #34495e;
+            padding: 1rem;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav a {
+            color: #ecf0f1;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+        nav a:hover {
+            color: #f39c12;
+        }
+        main {
+            padding: 2rem;
+        }
+        section {
+            background: white;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #2c3e50;
+        }
+        .nutrition-tips {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .tip {
+            width: 30%;
+            padding: 1rem;
+            background: #ecf0f1;
+            margin: 1rem 0;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        .tip h3 {
+            margin-top: 0;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            background: #34495e;
+            color: white;
+        }
+        footer p {
+            margin: 0;
+        }
+        .nutrition-calculator {
+            display: flex;
+            justify-content: center;
+            padding: 1rem;
+        }
+        .calculator-form {
+            width: 300px;
+            background: #fff;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+        }
+        .calculator-form input, .calculator-form select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .calculator-form button {
+            background: #f39c12;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .calculator-form button:hover {
+            background: #e67e22;
+        }
+        
+        @media (max-width: 768px) {
+            .nutrition-tips {
+                flex-direction: column;
+            }
+            .tip {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Advanced Nutrition Hub</h1>
+        <p>Your guide to healthy eating, meal plans, and nutrition tips</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#nutrition-tips">Nutrition Tips</a></li>
+            <li><a href="#calculator">Nutrition Calculator</a></li>
+            <li><a href="#recipes">Healthy Recipes</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="nutrition-tips">
+            <h2>Nutrition Tips</h2>
+            <div class="nutrition-tips">
+                <div class="tip">
+                    <h3>Eat a Variety of Foods</h3>
+                    <p>Eating a variety of foods ensures that you get all the nutrients your body needs to stay healthy.</p>
+                </div>
+                <div class="tip">
+                    <h3>Stay Hydrated</h3>
+                    <p>Drink plenty of water throughout the day to keep your body hydrated and functioning properly.</p>
+                </div>
+                <div class="tip">
+                    <h3>Control Portion Sizes</h3>
+                    <p>Be mindful of your portion sizes to avoid overeating and to maintain a healthy weight.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="calculator">
+            <h2>Nutrition Calculator</h2>
+            <p>Use the calculator to estimate your daily caloric needs based on your goals and lifestyle.</p>
+            <div class="nutrition-calculator">
+                <form class="calculator-form" id="calorie-form">
+                    <label for="age">Age</label>
+                    <input type="number" id="age" name="age" required>
+                    
+                    <label for="gender">Gender</label>
+                    <select id="gender" name="gender" required>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                    
+                    <label for="activity">Activity Level</label>
+                    <select id="activity" name="activity" required>
+                        <option value="sedentary">Sedentary</option>
+                        <option value="light">Lightly Active</option>
+                        <option value="moderate">Moderately Active</option>
+                        <option value="active">Very Active</option>
+                    </select>
+
+                    <button type="submit">Calculate</button>
+                </form>
+            </div>
+        </section>
+
+        <section id="recipes">
+            <h2>Healthy Recipes</h2>
+            <p>Here are some of our favorite healthy recipes:</p>
+            <ul>
+                <li><a href="#">Avocado & Chicken Salad</a></li>
+                <li><a href="#">Sweet Potato & Quinoa Bowl</a></li>
+                <li><a href="#">Spinach & Feta Omelette</a></li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or need personalized advice, reach out to us below:</p>
+            <address>
+                <p>Email: <a href="mailto:info@nutritionhub.com">info@nutritionhub.com</a></p>
+                <p>Phone: +1 800-123-4567</p>
+            </address>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Advanced Nutrition Hub | All Rights Reserved</p>
+    </footer>
+
+    <script>
+        document.getElementById('calorie-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const age = document.getElementById('age').value;
+            const gender = document.getElementById('gender').value;
+            const activity = document.getElementById('activity').value;
+
+            let calories = 0;
+
+            if (gender === 'male') {
+                calories = 10 * 70 + 6.25 * 175 - 5 * age + 5; 
+            } else {
+                calories = 10 * 70 + 6.25 * 165 - 5 * age - 161; 
+            }
+
+            if (activity === 'sedentary') {
+                calories *= 1.2;
+            } else if (activity === 'light') {
+                calories *= 1.375;
+            } else if (activity === 'moderate') {
+                calories *= 1.55;
+            } else {
+                calories *= 1.725;
+            }
+
+            alert('Your estimated daily caloric needs are: ' + Math.round(calories) + ' kcal.');
+        });
+    </script>
+
+</body>
+</html>
