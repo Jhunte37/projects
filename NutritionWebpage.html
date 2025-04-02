@@ -15,54 +15,83 @@
             background: #f4f4f4;
             color: #333;
         }
+
         header {
-            background: #2c3e50;
+            background: #2980b9;
             color: #fff;
             text-align: center;
-            padding: 2rem;
+            padding: 3rem 0;
+            border-bottom: 5px solid #34495e;
         }
+
         h1 {
             font-size: 3em;
             margin: 0;
         }
+
+        p {
+            font-size: 1.2em;
+            margin-top: 0.5rem;
+        }
+
+        header img {
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            max-width: 250px;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+        }
+
         nav {
-            text-align: center;
             background: #34495e;
             padding: 1rem;
+            text-align: center;
         }
+
         nav ul {
             list-style: none;
             padding: 0;
         }
+
         nav ul li {
             display: inline;
             margin-right: 20px;
         }
+
         nav a {
             color: #ecf0f1;
             text-decoration: none;
             font-size: 1.2em;
         }
+
         nav a:hover {
             color: #f39c12;
         }
+
         main {
             padding: 2rem;
         }
+
         section {
             background: white;
             padding: 1.5rem;
             margin-bottom: 1.5rem;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
         }
+
         h2 {
             color: #2c3e50;
         }
+
         .nutrition-tips {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
         }
+
         .tip {
             width: 30%;
             padding: 1rem;
@@ -71,23 +100,28 @@
             box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
             border-radius: 8px;
         }
+
         .tip h3 {
             margin-top: 0;
         }
+
         footer {
             text-align: center;
             padding: 1rem;
             background: #34495e;
             color: white;
         }
+
         footer p {
             margin: 0;
         }
+
         .nutrition-calculator {
             display: flex;
             justify-content: center;
             padding: 1rem;
         }
+
         .calculator-form {
             width: 300px;
             background: #fff;
@@ -95,13 +129,16 @@
             border-radius: 8px;
             box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
         }
-        .calculator-form input, .calculator-form select {
+
+        .calculator-form input,
+        .calculator-form select {
             width: 100%;
             padding: 10px;
             margin: 10px 0;
             border: 1px solid #ccc;
             border-radius: 5px;
         }
+
         .calculator-form button {
             background: #f39c12;
             color: white;
@@ -110,15 +147,40 @@
             border-radius: 5px;
             cursor: pointer;
         }
+
         .calculator-form button:hover {
             background: #e67e22;
+            transform: scale(1.05);
+            transition: all 0.3s ease-in-out;
         }
-        
+
         @media (max-width: 768px) {
             .nutrition-tips {
                 flex-direction: column;
+                align-items: center;
             }
+
             .tip {
+                width: 80%;
+                margin: 1rem 0;
+            }
+
+            header img {
+                max-width: 200px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            nav ul li {
+                display: block;
+                margin-bottom: 15px;
+            }
+
+            .calculator-form {
+                width: 90%;
+            }
+
+            .nutrition-calculator {
                 width: 100%;
             }
         }
@@ -129,7 +191,7 @@
     <header>
         <h1>Advanced Nutrition Hub</h1>
         <p>Your guide to healthy eating, meal plans, and nutrition tips</p>
-        <img src="Chania/Diet.png.jpg" alt="Chania" height="200" width="200">
+        <img src="Chania/Diet.png.jpg" alt="Healthy Diet Image">
     </header>
 
     <nav>
