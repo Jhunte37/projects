@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome To Chania</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        header {
+            text-align: center;
+            padding: 2rem 0;
+            background-color: rgba(0, 0, 0, 0.7);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+        h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+        main {
+            padding: 2rem;
+        }
+        section {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 2rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+            text-align: center;
+        }
+        img {
+            border-radius: 50%;
+            border: 4px solid #fff;
+            max-width: 100%;
+            height: auto;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        nav li {
+            margin: 0.5rem 1rem;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+            color: #FFD700;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+        }
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header {
+                padding: 1rem;
+            }
+            h1 {
+                font-size: 2.5em;
+            }
+            main {
+                padding: 1rem;
+            }
+            section {
+                padding: 1rem;
+            }
+            nav li {
+                margin: 0.5rem;
+            }
+        }
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 2em;
+            }
+            body {
+                font-size: 14px;
+            }
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            nav li {
+                margin-bottom: 0.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome To Chania</h1>
+    </header>
+    <main>
+        <section>
+            <article>
+                <figure>
+                    <img src="Chania/Chania.png" alt="Chania" height="200" width="200">
+                    <figcaption>Beautiful View of Chania</figcaption>
+                </figure>
+                <p>Nestled along the sparkling coastline of Crete, Chania is a mesmerizing blend of rich history, stunning landscapes, and vibrant culture. Wander through its cobblestone streets and you'll encounter Venetian architecture, charming harbor views, and a tapestry of influences from the island's colorful past. With its delightful mix of traditional tavernas, lively markets, and inviting beaches, Chania offers an enchanting escape for travelers seeking both relaxation and adventure. Whether you're drawn to its fascinating museums, picturesque old town, or the azure waters of the Mediterranean, Chania promises an unforgettable experience that will leave you yearning to return.</p>
+            </article>
+
+            <aside>
+                <h2>Nearby Attractions</h2>
+                <ul>
+                    <li>Venetian Harbor</li>
+                    <li>Chania Old Town</li>
+                    <li>Elafonissi Beach</li>
+                </ul>
+            </aside>
+
+            <nav>
+                <ul>
+                    <li><a href="https://en.wikipedia.org/wiki/Chania">History Of Chania</a></li>
+                    <li><a href="https://www.chaniatourism.gr/">Facts About Chania</a></li>
+                    <li><a href="https://www.tripadvisor.com/Tourism-g189415-Chania_Town_Chania_Prefecture_Crete-Vacations.html">Planning A Trip To Chania</a></li>
+                </ul>
+            </nav>
+        </section>
+        
+        <section>
+            <h2>Contact Information</h2>
+            <address>
+                <p>Email: <a href="mailto:info@chania.gr">info@chania.gr</a></p>
+                <p>Phone: +30 28210 12345</p>
+            </address>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; Jeremy</p>
+    </footer>
+</body>
+</html>
